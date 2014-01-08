@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/js.css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(document).ready( function(){
+		console.log("hey! document ready!");
+		$('.nav-list-item').on('click', 'a', function(event) {
+			event.preventDefault();
+			destination = $(event.currentTarget).attr('href');
+		  $('body').animate({
+		    'scrollTop':   $(destination).offset().top
+		  }, 1000);
+		}) 
+	});
+	</script>
+	
+	<title>Anthony Chien</title>
+	<body>
+		
+		<div class="nav-wrapper">
+			<nav class="nav-menu group">
+				<div class="my-name">Anthony Chien</div>
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="#about">About</a></li>
+					<li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="nav-list-item"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<section class="content">
+			<a name="about"></a>
+			<section class="about group" id ="about">
+				<header>About</header>
+				<div class="profile-pic"><img src="/images/anthony-chien-250px.jpg"></div>
+				<div class="profile-text">Let me introduce myself. My name is Anthony and I love building things. I am obsessed with making products the best that they can be, whether its improving upon prior work or building it from scratch. <br><br>I have come a long ways to where I am today. I graduated from the University of California, Berkeley with dual science degrees, one of which emphasized in computational modeling. After a stint in academic research, I transitioned into business by getting my MBA from NYU. In this new capacity, I've worked as a consultant, equity researcher, and most recently a VP at a technology startup. It is at this last position that I rekindled my love for coding and development. Once re-exposed, I knew that I needed to pursue it full-time. <br><br>My web development skillset includes: <span class="skills">Ruby, Rails, Javascript, Backbone.js, JQuery, HTML/CSS</span>. I also have years of experience in C/C++, Java, Lisp, MIPS from undergrad. Feel free to poke around and check out some of my projects and reach out with any inquiries. Enjoy!</div>
+			</section>
+			
+			<a name="portfolio"></a>
+			<section class="portfolio" id="portfolio">
+				<header>Portfolio</header>
+				<ul class="portfolio-list">
+					<li class="portfolio-list-item">
+						<div class="project-title"><a href="http://www.yibs.co">www.yibs.co</a></div>
+						<div class="project-blurb">Social networking site that helps you make bets with your friends</div>
+						<div class="project-description">Single-page user experience utilizing AJAX calls to a RESTful API in Rails. Custom auto-complete friend search and drop-down feature to add friends to bets, ala Gmail. Third-party integrations to broadcast bets to other social media outlets (ie- Facebook). Proper event delegation to avoid memory leaks stemming from over-assignment of handlers.</div>
+					</li>
+					<li class="portfolio-list-item">
+						<div class="project-title">OGmail</div>
+						<div class="project-blurb">Clone of Gmail and its key features (threading, message collections)</div>
+						<div class="project-description">Backbone application consuming RESTful API in Rails.  Utilized Backbone.relational to reduce thread reloading. Made Backbone.Model a subclass so we can try to use existing versions of objects if not too aged.</div>
+					</li>
+					<li class="portfolio-list-item">
+						<div class="project-title">Radio-ActiveRecord</div>
+						<div class="project-blurb">Clone of ActiveRecord basic functionality</div>
+						<div class="project-description">Implemented associations, querying, persistence, and mass-assignments. Utilized heavy ruby-metaprogramming.</div>
+					</li>
+				</ul>
+			</section>
+			
+			<a name="contact"></a>
+			<section class="contact" id="contact">
+				<header>Contact</header>
+				<ul class="contact-list">
+					<li>Email: <span>hello@AnthonyChien.com</span></li>
+					<li>Cell: <span>(510)506-8477</span></li>
+					<li>linkedIn: <span>www.linkedin.com/pub/anthony-chien/25/57a/57b/</span></li>
+					<li>Github: <span>https://github.com/antchien </span></li>
+				</ul>
+			</section>
+			
+		</section>
+	</body>
+</head>
+</html>
