@@ -208,7 +208,7 @@ section > header {
 	padding-top: 5px;
 }
 
-.contact-list > li > span {
+.contact-list > li > a {
 	color: #292929;
 	font-weight: bold;
 }

@@ -21,7 +21,7 @@
 			event.preventDefault();
 			destination = $(event.currentTarget).attr('href');
 		  $('body').animate({
-		    'scrollTop':   $(destination).offset().top
+		    'scrollTop':   $(destination).offset().top - 50
 		  }, 1000);
 		}) 
 	});
@@ -74,9 +74,9 @@
 			<section class="contact" id="contact">
 				<header>Contact</header>
 				<ul class="contact-list">
-					<li>Email: <span>hello@AnthonyChien.com</span></li>
-					<li>linkedIn: <span>www.linkedin.com/pub/anthony-chien/25/57a/57b/</span></li>
-					<li>Github: <span>https://github.com/antchien </span></li>
+					<li>Email: <a href="hello@AnthonyChien.com">hello@AnthonyChien.com</a></li>
+					<li>linkedIn: <a href="www.linkedin.com/pub/anthony-chien/25/57a/57b/">www.linkedin.com/pub/anthony-chien/25/57a/57b/</a></li>
+					<li>Github: <a href="https://github.com/antchien">https://github.com/antchien</a></li>
 				</ul>
 			</section>
 			
