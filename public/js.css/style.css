@@ -92,10 +92,9 @@ a {
 	cursor: pointer;
 }
 
-/*about*/
-
-
 /*content*/
+
+/*about*/
 
 .content {
 	width: 800px;
@@ -130,6 +129,7 @@ section.about > div {
 
 .profile-text {
 	font-size: 110%;
+	padding-bottom: 20px;
 }
 
 .profile-text > span {
@@ -141,6 +141,22 @@ section > header {
 	font-size: 200%;
 	font-weight: bold;
 	color: white;
+}
+
+.resume-link {
+	text-align: center;
+	margin: auto;
+}
+
+.resume-link > a {
+	padding: 5px 8px;
+	background-color: #292929;
+	color: white;
+	font-weight: bold;
+}
+
+.resume-link > a:hover {
+	background-color: #1FE496;
 }
 
 /*portfolio*/
